@@ -5,8 +5,13 @@
 <body>
 	<header>
 		<a href='/MVC-Test'>Home</a>
+		<a href='?controller=posts&action=index'>Posts</a>
 	</header>
-
+	<?php 	
+		if(isset($_POST['author'])){
+			echo $_POST['author'];
+		}
+	?>
 	<?php require_once('routes.php'); ?>
 
 	<footer>
