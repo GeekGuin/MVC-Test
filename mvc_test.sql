@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-11-2015 a las 09:14:37
+-- Tiempo de generación: 22-11-2015 a las 20:50:03
 -- Versión del servidor: 5.6.17
 -- Versión de PHP: 5.5.12
 
@@ -38,8 +38,8 @@ CREATE TABLE IF NOT EXISTS `posts` (
 --
 
 INSERT INTO `posts` (`idPost`, `author`, `content`) VALUES
-(1, 'Andre Ivan', 'MAMENME EL GUEVO MALDITOS'),
-(2, 'Pedro', 'Mielda que arrecho ta la vaina y la guevona vladimil'),
+(1, 'Andre Ivan', 'Este es el post 1..\r\nejemplo....'),
+(2, 'Pedro', 'Otro ejemplo!!! :)'),
 (3, 'Samuel', 'kotl gif mana');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
