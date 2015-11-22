@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<base href="//localhost:81/MVC-Test/"/>
 </head>
 <body>
 	<header>
 		<a href='/MVC-Test'>Home</a>
-		<a href='?controller=posts&action=index'>Posts</a>
+		<a href='posts/index'>Posts</a>
 	</header>
 	<?php 	
 		if(isset($_POST['author'])){
