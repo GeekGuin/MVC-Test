@@ -7,5 +7,5 @@ RewriteCond %{SCRIPT_FILENAME} !-f
  
 # Reescribir la URL solicitada por el usuario
 RewriteRule ^(\w+)/(\w+)/?$ index.php?controller=$1&action=$2
-RewriteRule ^(\w+)/(\w+)/(\d)/?$ index.php?controller=$1&action=$2&id=$3
+RewriteRule ^(\w+)/(\w+)/(\d+)/?$ index.php?controller=$1&action=$2&id=$3
 </IfModule>

@@ -14,15 +14,13 @@
 			if(!isset($_GET['id'])){
 				return call('pages', 'error');
 			}
+			//We use the given id to get to the right post, using the 
+			//find($id) static method from the Post class.
 
-			if(isset($_GET['author'])){
-				$posts = Post::findByName($_GET['author']);
-			}else{
-				//We use the given id to get to the right post, using the 
-				//find($id) static method from the Post class.
-				$posts = Post::find($_GET['id']);
+			$post = Post::find($_GET['id']);
+			if($post->id == NULL){
+				return call('pages', 'error');
 			}
-
 			require_once('views/posts/show.php');
 		}
 	}

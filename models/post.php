@@ -21,6 +21,7 @@
 			foreach($req->fetchAll() as $post){
 				$list[] = new Post($post['idPost'], $post['author'], $post['content']);
 			}
+
 			return($list);
 		}
 
